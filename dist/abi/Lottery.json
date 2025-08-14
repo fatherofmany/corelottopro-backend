@@ -1,0 +1,67 @@
+{
+    "abi": [
+        {
+            "type": "event",
+            "name": "EntryPurchased",
+            "inputs": [
+                {
+                    "name": "buyer",
+                    "type": "address",
+                    "indexed": false
+                },
+                {
+                    "name": "roundId",
+                    "type": "uint256",
+                    "indexed": false
+                },
+                {
+                    "name": "quantity",
+                    "type": "uint256",
+                    "indexed": false
+                },
+                {
+                    "name": "ticketPrice",
+                    "type": "uint256",
+                    "indexed": false
+                }
+            ]
+        },
+        {
+            "type": "event",
+            "name": "RoundClosed",
+            "inputs": [
+                {
+                    "name": "roundId",
+                    "type": "uint256",
+                    "indexed": false
+                },
+                {
+                    "name": "totalPool",
+                    "type": "uint256",
+                    "indexed": false
+                }
+            ]
+        },
+        {
+            "type": "event",
+            "name": "WinnersDrawn",
+            "inputs": [
+                {
+                    "name": "roundId",
+                    "type": "uint256",
+                    "indexed": false
+                },
+                {
+                    "name": "winners",
+                    "type": "address[]",
+                    "indexed": false
+                },
+                {
+                    "name": "prizes",
+                    "type": "uint256[]",
+                    "indexed": false
+                }
+            ]
+        }
+    ]
+}

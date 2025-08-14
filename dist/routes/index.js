@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.router = void 0;
+const express_1 = require("express");
+const rounds_1 = require("./rounds");
+const analytics_1 = require("./analytics");
+const leaderboard_1 = require("./leaderboard");
+const admin_1 = require("./admin");
+exports.router = (0, express_1.Router)();
+exports.router.use('/rounds', rounds_1.roundsRouter);
+exports.router.use('/analytics', analytics_1.analyticsRouter);
+exports.router.use('/leaderboard', leaderboard_1.leaderboardRouter);
+exports.router.use('/admin', admin_1.adminRouter);

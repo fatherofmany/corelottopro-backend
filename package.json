@@ -1,0 +1,44 @@
+{
+  "name": "lottery-backend",
+  "version": "0.1.0",
+  "private": true,
+  
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:deploy": "prisma migrate deploy",
+    "db:seed": "tsx src/scripts/seed.ts",
+    "worker": "tsx src/worker.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.14.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "ethers": "^6.13.2",
+    "express": "^4.21.2",
+    "morgan": "^1.10.1",
+    "pg": "^8.16.3",
+    "pino": "^9.4.0",
+    "pino-http": "^9.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^4.17.23",
+    "@types/morgan": "^1.9.10",
+    "@types/node": "^20.19.10",
+    "@types/pg": "^8.15.5",
+    "prisma": "^6.14.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.4"
+  },
+  "description": "A production-ready starter backend for your Core DAO lottery dApp.",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
